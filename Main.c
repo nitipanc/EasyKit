@@ -65,7 +65,7 @@ void main(void)
 	 P1L_P3  = ~P1L_P3;		
 	 
 
-
+	// test
 	 counter1 = 0x8;
 	 while (counter1 > 0)
 	 {
