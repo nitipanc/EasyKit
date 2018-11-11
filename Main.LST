@@ -1,4 +1,4 @@
-C166 COMPILER V6.06, MAIN                                                                  11/11/2018 10:53:37 PAGE 1   
+C166 COMPILER V6.06, MAIN                                                                  11/11/2018 12:28:30 PAGE 1   
 
 
 C166 COMPILER V6.06, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE Main.c MODV2 HLARGE BROWSE MODV2 
    46         //             main program
    47         //***************************************************************************** 
    48         void main(void)
-C166 COMPILER V6.06, MAIN                                                                  11/11/2018 10:53:37 PAGE 2   
+C166 COMPILER V6.06, MAIN                                                                  11/11/2018 12:28:30 PAGE 2   
 
    49         {
    50  1      /************************************************************************/
@@ -79,28 +79,29 @@ COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE Main.c MODV2 HLARGE BROWSE MODV2 
    61  1              while (1) 
    62  1              {
    63  2               P1L_P0  = ~P1L_P0;         // Toggle yellow LED
-   64  2               P1L_P1  = ~P1L_P1;     
-   65  2               
-   66  2      
+   64  2               P1L_P1  = P1L_P1;
+   65  2               P1L_P3  = ~P1L_P3;             
+   66  2               
    67  2      
-   68  2               counter1 = 0x8;
-   69  2               while (counter1 > 0)
-   70  2               {
-   71  3                      counter1--;
-   72  3                      counter2 = 0xFFFF;
-   73  3                      while (counter2 > 0)
-   74  3                      {
-   75  4                              counter2--;
-   76  4                      }
-   77  3               }
-   78  2              }
-   79  1       }
-   80         
+   68  2      
+   69  2               counter1 = 0x8;
+   70  2               while (counter1 > 0)
+   71  2               {
+   72  3                      counter1--;
+   73  3                      counter2 = 0xFFFF;
+   74  3                      while (counter2 > 0)
+   75  3                      {
+   76  4                              counter2--;
+   77  4                      }
+   78  3               }
+   79  2              }
+   80  1       }
    81         
-   82         //*****************************************************************************
-   83         //             end of program
-   84         //*****************************************************************************
-   85         
+   82         
+   83         //*****************************************************************************
+   84         //             end of program
+   85         //*****************************************************************************
+   86         
 
 
 MODULE INFORMATION:   INITIALIZED  UNINITIALIZED

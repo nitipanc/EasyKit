@@ -61,7 +61,8 @@ void main(void)
 	while (1) 
 	{
 	 P1L_P0  = ~P1L_P0;	    // Toggle yellow LED
-	 P1L_P1  = ~P1L_P1;	
+	 P1L_P1  = P1L_P1;
+	 P1L_P3  = ~P1L_P3;		
 	 
 
 
