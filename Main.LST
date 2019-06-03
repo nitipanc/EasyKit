@@ -1,4 +1,4 @@
-C166 COMPILER V6.06, MAIN                                                                  11/11/2018 12:28:30 PAGE 1   
+C166 COMPILER V6.06, MAIN                                                                  05/23/2019 22:07:22 PAGE 1   
 
 
 C166 COMPILER V6.06, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE Main.c MODV2 HLARGE BROWSE MODV2 
    46         //             main program
    47         //***************************************************************************** 
    48         void main(void)
-C166 COMPILER V6.06, MAIN                                                                  11/11/2018 12:28:30 PAGE 2   
+C166 COMPILER V6.06, MAIN                                                                  05/23/2019 22:07:22 PAGE 2   
 
    49         {
    50  1      /************************************************************************/
@@ -74,8 +74,8 @@ COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE Main.c MODV2 HLARGE BROWSE MODV2 
    56  1      /************************************************************************/
    57  1      
    58  1         //DP1L = (DP1L & ~(uword)0x3333) | 0x3333;      // Set direction register Port P1L.0 as output        
-   59  1              DP1L = (DP1L & ~(uword)0x0013) ;
-   60  1              DP1L = (DP1L | 0x0013) ;
+   59  1              DP1L = (DP1L & ~(uword)0x00ff) ;
+   60  1              DP1L = (DP1L | 0x00ff) ;
    61  1              while (1) 
    62  1              {
    63  2               P1L_P0  = ~P1L_P0;         // Toggle yellow LED
@@ -83,7 +83,7 @@ COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE Main.c MODV2 HLARGE BROWSE MODV2 
    65  2               P1L_P3  = ~P1L_P3;             
    66  2               
    67  2      
-   68  2      
+   68  2              // test
    69  2               counter1 = 0x8;
    70  2               while (counter1 > 0)
    71  2               {

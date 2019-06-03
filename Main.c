@@ -56,8 +56,8 @@ void main(void)
 /************************************************************************/
 
    //DP1L = (DP1L & ~(uword)0x3333) | 0x3333;	   // Set direction register Port P1L.0 as output        
-	DP1L = (DP1L & ~(uword)0x0013) ;
-	DP1L = (DP1L | 0x0013) ;
+	DP1L = (DP1L & ~(uword)0x00ff) ;
+	DP1L = (DP1L | 0x00ff) ;
 	while (1) 
 	{
 	 P1L_P0  = ~P1L_P0;	    // Toggle yellow LED

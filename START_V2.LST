@@ -1,4 +1,4 @@
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     1
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     1
 
 
 MACRO ASSEMBLER A166 V5.21
@@ -65,7 +65,7 @@ LOC      OBJ             LINE     SOURCE
                            56     ;
                            57     ; <o> UST1SZ: User Stack Size for local register bank 1 <0x0-0x4000:0x2>
                            58     ; <i> Defines the user stack space available for the interrupt functions that are
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     2
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     2
 
                            59     ; <i> assigned to the local register bank 1.  Since the compiler cannot copy the R0
                            60     ; <i> value to local register banks, the user stack must be assign separately.
@@ -133,7 +133,7 @@ LOC      OBJ             LINE     SOURCE
                           122     ;
                           123     ; <o> WDTCTL: Watchdog Timer Control (CPUCON1.4):
                           124     ; <0=> DISWDT executable until end of EINIT  <1=> DISWDT/ENWDT always executable
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     3
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     3
 
  0000                     125     _WDTCTL  EQU    0       ; 0 = DISWDT executable until end of EINIT
                           126                             ; 1 = DISWDT/ENWDT always executable
@@ -201,7 +201,7 @@ LOC      OBJ             LINE     SOURCE
  0008                     188     _FIFODEPTH EQU  8       ; 0 = No FIFO entries (No FIFO)
                           189                             ; 1 = 1 FIFO entry
                           190                             ; ...
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     4
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     4
 
                           191                             ; 8 = 8 FIFO entries
                           192                             ; 9 - 15 = reserved
@@ -269,7 +269,7 @@ LOC      OBJ             LINE     SOURCE
                           254                             ; 2 - 7 = reserved
                           255     ; </e>
                           256     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     5
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     5
 
                           257     ; <e> Definitions for System Configuration Register SYSCON3
                           258     ; =========================================================
@@ -337,7 +337,7 @@ LOC      OBJ             LINE     SOURCE
  0000                     320     _RORMV    EQU    0      ; 0 = RSTOUT delivers RSTOUT# signal
                           321                             ; 1 = RSTOUT pin operates as GPIO
                           322     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     6
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     6
 
                           323     ; <o> ROCOFF: RSTOUT# Control Switch Off (RSTCON.5)
                           324     ; <0=>RSTOUT deactivated by user software  <1=>RSTOUT deactivated after reset
@@ -405,7 +405,7 @@ LOC      OBJ             LINE     SOURCE
                           383     ; <e> Definitions for Watchdog Timer Control Register WDTCON
                           384     ; ==========================================================
                           385     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     7
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     7
 
                           386     ; --- Set WATCHDOG = 0 to enable the Hardware watchdog and initilize the WDTCON regist
                                   er
@@ -473,7 +473,7 @@ LOC      OBJ             LINE     SOURCE
                           448                             ; 8 = Eight (A16 .. A23) address pins enabled
                           449                             ; 9 - 15 = reserved
                           450     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     8
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     8
 
                           451     ; <o> CSPEN: CSx Pins Enabled (EBCMOD0.4 .. EBCMOD0.7) <0-8>
                           452     ; <i> Number of active ChipSelect pins
@@ -541,7 +541,7 @@ LOC      OBJ             LINE     SOURCE
                           514     ;
                           515     ; <q> DHPDIS: Data High Port Pins Disable (EBCMOD1.6)
  0000                     516     _DHPDIS    EQU    0     ; 0 = Data bus pins 15-8 of PORT0 enabled
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE     9
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE     9
 
                           517                             ; 1 = Data bus pins 15-8 disabled (used as GPIO)
                           518     ;
@@ -609,7 +609,7 @@ LOC      OBJ             LINE     SOURCE
                           580                             ; 31 = 32 clock cycles
                           581     ;
                           582     ; <o> RDPHF0: Phase F read clock cycles (TCONCS0.11 .. TCONCS0.12) <0-3>
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    10
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    10
 
  0000                     583     _RDPHF0     EQU    0    ; 0 = 0 clock cycles
                           584                             ; : = :
@@ -677,7 +677,7 @@ LOC      OBJ             LINE     SOURCE
                           646                             ; 2 = 16 bit Demultiplexed bus
                           647                             ; 3 = 16 bit Multiplexed bus
                           648     ;</h>
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    11
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    11
 
                           649     ;
                           650     ; <h>TCONCS1: Definitions for the Timing Configuration register 
@@ -745,7 +745,7 @@ LOC      OBJ             LINE     SOURCE
                           712                                  ; 1024*KB  or  1*MB  (gives RGSZ2 = 8)
                           713                                  ; 2048*KB  or  2*MB  (gives RGSZ2 = 9)
                           714                                  ; 4096*KB  or  4*MB  (gives RGSZ2 = 10)
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    12
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    12
 
                           715                                  ; 8192*KB  or  8*MB  (gives RGSZ2 = 11)
                           716                                  ;                    (RGSZ2 = 12 .. 15 reserved)
@@ -813,7 +813,7 @@ LOC      OBJ             LINE     SOURCE
                           778                             ; 3 = 3 clock cycles
                           779     ;</h> </e>
                           780     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    13
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    13
 
                           781     ;<e>Configure External Bus Behaviour for CS3 Area
                           782     ;   =============================================
@@ -881,7 +881,7 @@ LOC      OBJ             LINE     SOURCE
                           844                             ; 3 = 3 clock cycles
                           845     ;
                           846     ; <o>PHB3: Phase B clock cycle (TCONCS2.2) <1-2> <#-1>
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    14
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    14
 
  0000                     847     _PHB3       EQU    0    ; 0 = 1 clock cycle
                           848                             ; 1 = 2 clock cycles
@@ -949,7 +949,7 @@ LOC      OBJ             LINE     SOURCE
                           910     ; <q> ENCS4: Enable Chip Select (FCONCS4.0)
  0001                     911     _ENCS4     EQU    1     ; 0 = Chip Select 0 disabled
                           912                             ; 1 = Chip Select 0 enabled
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    15
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    15
 
                           913     ;
                           914     ; <q> RDYEN4: Ready Enable (FCONCS4.1)
@@ -1017,7 +1017,7 @@ LOC      OBJ             LINE     SOURCE
                           976     ; ===================================================
                           977     ; <o> CS5 Start Address   <0x0-0xFFFFFF:0x1000>
  00500000                 978     _ADDR5      EQU 0x500000     ; Set CS5# Start Address (default 100000H)
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    16
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    16
 
                           979     
                           980     ; <o> CS5 Size in KB      
@@ -1085,7 +1085,7 @@ LOC      OBJ             LINE     SOURCE
                          1042     ;
                          1043     ; <o>PHD5: Phase D clock cycle (TCONCS5.5) <0-1>
  0000                    1044     _PHD5       EQU    0    ; 0 = 0 clock cycles
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    17
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    17
 
                          1045                             ; 1 = 1 clock cycle
                          1046     ;
@@ -1153,7 +1153,7 @@ LOC      OBJ             LINE     SOURCE
  0000                    1108     _RDYMOD6   EQU    0     ; 0 = Asynchronous READY
                          1109                             ; 1 = Synchronous READY
                          1110     ;
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    18
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    18
 
                          1111     ; <o> BTYP6: Bus Type Selection (FCONCS6.4 .. FCONCS6.5)
                          1112     ; <0=> 8-bit Demultiplexed Bus  <1=> 8-bit Multiplexed Bus
@@ -1221,7 +1221,7 @@ LOC      OBJ             LINE     SOURCE
                          1174                                  ;    4*KB            (gives RGSZ7 = 0)
                          1175                                  ;    8*KB            (gives RGSZ7 = 1)
                          1176                                  ;   16*KB            (gives RGSZ7 = 2)
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    19
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    19
 
                          1177                                  ;   32*KB            (gives RGSZ7 = 3)
                          1178                                  ;   64*KB            (gives RGSZ7 = 4)
@@ -1289,7 +1289,7 @@ LOC      OBJ             LINE     SOURCE
                          1240     ; <o>RDPHF7: Phase F read clock cycle (TCONCS7.11 .. TCONCS7.12) <0-3>
  0000                    1241     _RDPHF7     EQU    0    ; 0 = 0 clock cycles
                          1242                             ; : = :
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    20
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    20
 
                          1243                             ; 3 = 3 clock cycles
                          1244     ;
@@ -1357,7 +1357,7 @@ LOC      OBJ             LINE     SOURCE
                          1306     NDATA           DGROUP  ?C_USERSTACK, ?C_USERSTACK1, ?C_USERSTACK2
                          1307     ENDIF
                          1308     IF (UST1SZ > 0) AND (UST2SZ = 0) 
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    21
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    21
 
                                   NDATA           DGROUP  ?C_USERSTACK, ?C_USERSTACK1
                                   ENDIF
@@ -1425,7 +1425,7 @@ LOC      OBJ             LINE     SOURCE
  F1D4                    1372     SYSCON3  DEFR   0F1D4H
  F1D0                    1373     PLLCON   DEFR   0F1D0H
  EE10                    1374     TCONCS0  EQU    0EE10H
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    22
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    22
 
  EE18                    1375     TCONCS1  EQU    0EE18H
  EE20                    1376     TCONCS2  EQU    0EE20H
@@ -1493,7 +1493,7 @@ LOC      OBJ             LINE     SOURCE
                                                   MOV     CPUCON2,#_CPC2
                          1438     $ENDIF
                          1439     
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    23
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    23
 
                                   $IF (INIT_IMBCTR = 1)                   ; Set IMBCTR register
                                   _IMB                    EQU     (_WSFLASH) OR (_WSRAM<<2)
@@ -1561,7 +1561,7 @@ LOC      OBJ             LINE     SOURCE
                          1503     $ENDIF
                          1504     
                                   $IF (CONFIG_CS2)  
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    24
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    24
 
                                                                           ; Set TCONCS2 register
                                   _TCS2           SET     (_PHD2<<5) OR (_PHC2<<3) OR (_PHB2<<2) OR (_PHA2)
@@ -1629,7 +1629,7 @@ LOC      OBJ             LINE     SOURCE
                                                   MOV     FCONCS5,R0
                                   
                          1571     $ENDIF
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    25
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    25
 
                          1572     
                                   $IF (CONFIG_CS6)  
@@ -1697,7 +1697,7 @@ LOC      OBJ             LINE     SOURCE
                          1635                     EXTRN   ?C_PAGEDPP2 : DATA16
                          1636     
                          1637     $IF (DPPUSE = 1)
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    26
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    26
 
 0000003E E600???? E      1638                     MOV     DPP0,#?C_PAGEDPP0       ; INIT DPP0 VALUE
                          1639     $ENDIF
@@ -1765,7 +1765,7 @@ LOC      OBJ             LINE     SOURCE
                                                   SUB     R2,#1
                                                   JMPR    cc_NZ,ClearBit
                                                   JMPR    cc_UC,RepeatClear
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    27
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    27
 
                                   
                                   ClearNear:
@@ -1833,7 +1833,7 @@ LOC      OBJ             LINE     SOURCE
                                                   SRVWDT                          ; SERVICE WATCHDOG
                          1768     $ENDIF
 000000C0 B9A4            1769                     MOVB    [R4],RL5
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    28
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    28
 
 000000C2 0841            1770                     ADD     R4,#1
 000000C4 2821            1771                     SUB     R2,#1
@@ -1901,7 +1901,7 @@ LOC      OBJ             LINE     SOURCE
                          1833     $ELSE ; $IF TINY **************************************************************
 000000CA E6F9???? E      1834                     MOV     R9,#SEG (?C_INITSECSTART)
 000000CE E6F8???? E      1835                     MOV     R8,#SOF (?C_INITSECSTART)
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    29
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    29
 
                          1836     $IF (DPP3USE = 1) ; ***********************************************************
                          1837     RepeatInit:     
@@ -1969,7 +1969,7 @@ LOC      OBJ             LINE     SOURCE
 00000154 0DBE            1899                     JMPR    cc_UC,RepeatInit
                          1900     
                                   $ELSE ; block IF (DPP3USE = 1) ************************************************
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    30
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    30
 
                                   RepeatInit:       
                                   $IF (WATCHDOG = 1)
@@ -2037,7 +2037,7 @@ LOC      OBJ             LINE     SOURCE
                                                   MOV     R4,#1
                                                   MOVB    RL5,RH2
                                                   SHL     R4,R5                   ; CALCULATE BIT MASK
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    31
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    31
 
                                                   JB      R2.7,SetBit
                                                   CPL     R4                      ; CLEAR BIT
@@ -2073,7 +2073,7 @@ LOC      OBJ             LINE     SOURCE
                          1999     
                          2000     
                          2001     
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    32
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    32
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -2141,7 +2141,7 @@ FCONCS2. . . . . .  DATA16 EE22H             A
 FCONCS3. . . . . .  DATA16 EE2AH             A  
 FCONCS4. . . . . .  DATA16 EE32H             A  
 FCONCS5. . . . . .  DATA16 EE3AH             A  
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    33
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    33
 
 FCONCS6. . . . . .  DATA16 EE42H             A  
 FCONCS7. . . . . .  DATA16 EE4AH             A  
@@ -2209,7 +2209,7 @@ _BTYP0 . . . . . .  DATA3  2H                A
 _BTYP1 . . . . . .  DATA3  2H                A  
 _BTYP2 . . . . . .  DATA3  2H                A  
 _BTYP3 . . . . . .  DATA3  2H                A  
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    34
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    34
 
 _BTYP4 . . . . . .  DATA3  2H                A  
 _BTYP5 . . . . . .  DATA3  2H                A  
@@ -2277,7 +2277,7 @@ _PHD4. . . . . . .  DATA3  0H                A
 _PHD5. . . . . . .  DATA3  0H                A  
 _PHD6. . . . . . .  DATA3  0H                A  
 _PHD7. . . . . . .  DATA3  0H                A  
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    35
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    35
 
 _PHE0. . . . . . .  DATA4  8H                A  
 _PHE1. . . . . . .  DATA4  8H                A  
@@ -2345,7 +2345,7 @@ _TCS0. . . . . . .  DATA16 6200H             A
 _TOS . . . . . . .  BYTE   200H              R  SEC=?C_SYSSTACK
 _VECSC . . . . . .  DATA3  0H                A  
 _WDTCTL. . . . . .  DATA3  0H                A  
-A166 MACRO ASSEMBLER  START_V2                                                            11/11/2018 12:28:30 PAGE    36
+A166 MACRO ASSEMBLER  START_V2                                                            05/23/2019 22:07:22 PAGE    36
 
 _WDTIN . . . . . .  DATA3  1H                A  
 _WDTREL. . . . . .  DATA3  0H                A  
